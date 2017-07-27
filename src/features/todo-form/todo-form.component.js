@@ -14,11 +14,20 @@ export default class TodoFormComponent extends React.Component {
         };
 
         this.updateItem = this.updateItem.bind(this);
+        this.addTodo = this.addTodo.bind(this);
     }
 
     updateItem (item) {
         const index = this.state.todoItems.indexOf(item);
         this.state.todoItems.splice(index, 1);
+
+        this.setState({
+            todoItems: this.state.todoItems
+        });
+    }
+
+    addTodo(todo) {
+        this.state.todoItems.push({id: '4', todo: todo});
 
         this.setState({
             todoItems: this.state.todoItems
@@ -35,7 +44,7 @@ export default class TodoFormComponent extends React.Component {
                             <TodoItemsComponent items={this.state.todoItems} selectedTask={this.updateItem}/>
                         </div>
                         <div name="add-todo-item">
-                            <AddTodoItemComponent/>
+                            <AddTodoItemComponent addTodoTask={this.addTodo}/>
                         </div>
                     </div>
                 </div>

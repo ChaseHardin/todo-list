@@ -1,16 +1,13 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './App.css';
-import TodoItemsComponent from "./features/todo-items/todo-items.component";
+import TodoFormComponent from "./features/todo-form/todo-form.component";
 
 class App extends Component {
-
-
-  render() {
-    return (
-       
-
-    );
-  }
+    render() {
+       return (
+          <TodoFormComponent />
+       )
+    }
 }
 
 export default App;

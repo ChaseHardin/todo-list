@@ -10,15 +10,19 @@ export default class TodoFormComponent extends React.Component {
                 { id: '1', todo: 'Attend Bethel Music Friday' },
                 { id: '2', todo: 'Go Hiking Sunday at 2pm' },
                 { id: '3', todo: 'Longboard at Simpson' }
-            ],
-            selected: {}
+            ]
         };
 
         this.updateItem = this.updateItem.bind(this);
     }
 
     updateItem (item) {
-        console.log('Selected Value:: ', item);
+        const index = this.state.todoItems.indexOf(item);
+        this.state.todoItems.splice(index, 1);
+
+        this.setState({
+            todoItems: this.state.todoItems
+        });
     }
 
     render() {

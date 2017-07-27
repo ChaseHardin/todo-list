@@ -5,10 +5,6 @@ export default class TodoItemsComponent extends React.Component {
         super(props);
     }
 
-    selectedTask (item) {
-        this.setState({selected: item})
-    }
-
     render() {
         return (
             <ul className="list-group">

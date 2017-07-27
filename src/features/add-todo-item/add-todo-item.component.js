@@ -25,7 +25,9 @@ export default class AddTodoItemComponent extends React.Component {
                 </div>
                 <div className="row">
                     <div className="col-md-10 col-md-offset-2 text-right">
-                        <input type="button" value="Add Item" className="btn btn-primary" onClick={() => {this.props.addTodoTask(this.state.value)}}/>
+                        <input type="button" value="Add Item" className="btn btn-primary" onClick={() => {
+                            this.setState({value: ''});
+                            this.props.addTodoTask(this.state.value)}}/>
                     </div>
                 </div>
             </form>

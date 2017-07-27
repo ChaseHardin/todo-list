@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="123b371e-9827-440f-a35f-73ec2d8a37a6" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/features/add-todo-item/add-todo-item.component.js" afterPath="$PROJECT_DIR$/src/features/add-todo-item/add-todo-item.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/features/todo-form/todo-form.component.js" afterPath="$PROJECT_DIR$/src/features/todo-form/todo-form.component.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,48 +19,30 @@
     <favorites_list name="todo-list" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.36071616">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="todo-form.component.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/features/todo-form/todo-form.component.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-                  <folding>
-                    <element signature="e#0#31#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="todo-items.component.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/features/todo-items/todo-items.component.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="40" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="add-todo-item.component.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/features/add-todo-item/add-todo-item.component.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="495">
-                  <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="todo-form.component.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/features/todo-form/todo-form.component.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="46" lean-forward="true" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="todo-items.component.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/features/todo-items/todo-items.component.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="73" lean-forward="true" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -81,8 +63,8 @@
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/features/todo-items/todo-items.component.js" />
-        <option value="$PROJECT_DIR$/src/features/add-todo-item/add-todo-item.component.js" />
         <option value="$PROJECT_DIR$/src/features/todo-form/todo-form.component.js" />
+        <option value="$PROJECT_DIR$/src/features/add-todo-item/add-todo-item.component.js" />
       </list>
     </option>
   </component>
@@ -196,12 +178,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501104747842</updated>
-      <workItem from="1501104749010" duration="22904000" />
+      <workItem from="1501104749010" duration="24035000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22904000" />
+    <option name="totallyTimeSpent" value="24035000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -357,28 +339,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/features/todo-items/todo-items.component.js">
+    <entry file="file://$PROJECT_DIR$/src/features/add-todo-item/add-todo-item.component.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="40" />
+        <state relative-caret-position="210">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/features/todo-form/todo-form.component.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        <state relative-caret-position="315">
+          <caret line="21" column="46" lean-forward="true" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/features/add-todo-item/add-todo-item.component.js">
+    <entry file="file://$PROJECT_DIR$/src/features/todo-items/todo-items.component.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+        <state relative-caret-position="330">
+          <caret line="22" column="73" lean-forward="true" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
           <folding />
         </state>
       </provider>

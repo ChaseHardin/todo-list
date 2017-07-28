@@ -7,9 +7,9 @@ export default class TodoFormComponent extends React.Component {
         super();
         this.state = {
             todoItems: [
-                { id: '1', todo: 'Attend Bethel Music Friday', isComplete: false },
-                { id: '2', todo: 'Go Hiking Sunday at 2pm', isComplete: false },
-                { id: '3', todo: 'Longboard at Simpson', isComplete: true }
+                { id: '1', todo: 'Setup action on Les Paul', isComplete: false },
+                { id: '2', todo: 'Longboard at Simpson', isComplete: true },
+                { id: '3', todo: 'Learn Over React', isComplete: false }
             ]
         };
 

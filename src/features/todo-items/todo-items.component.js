@@ -5,19 +5,20 @@ export default class TodoItemsComponent extends React.Component {
         super(props);
     }
 
-    render() {
+render() {
         return (
             <ul className="list-group">
                 {
                     this.props.items.map((item) => {
                         return (
-                            <li className="list-group-item">
+                            <li className={"list-group-item" + (item.isComplete ? ' list-group-item-success' : '')}>
                                 {item.todo}
                                 <div className="pull-right">
                                     <button
                                         type="button"
-                                        className="btn btn-xs btn-success">
-                                        &#x2713;
+                                        className="btn btn-xs btn-success"
+                                        onClick={() => { this.props.updateStatus(item)}}
+                                        >&#x2713;
                                     </button> <button
                                         type="button"
                                         className="btn btn-xs btn-danger"

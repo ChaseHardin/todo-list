@@ -7,18 +7,19 @@ export default class TodoFormComponent extends React.Component {
         super();
         this.state = {
             todoItems: [
-                { id: '1', todo: 'Attend Bethel Music Friday' },
-                { id: '2', todo: 'Go Hiking Sunday at 2pm' },
-                { id: '3', todo: 'Longboard at Simpson' }
+                { id: '1', todo: 'Attend Bethel Music Friday', isComplete: false },
+                { id: '2', todo: 'Go Hiking Sunday at 2pm', isComplete: false },
+                { id: '3', todo: 'Longboard at Simpson', isComplete: true }
             ]
         };
 
-        this.updateItem = this.updateItem.bind(this);
+        this.deleteTodo = this.deleteTodo.bind(this);
         this.addTodo = this.addTodo.bind(this);
+        this.updateTodo = this.updateTodo.bind(this);
     }
 
-    updateItem (item) {
-        const index = this.state.todoItems.indexOf(item);
+    deleteTodo (todo) {
+        const index = this.state.todoItems.indexOf(todo);
         this.state.todoItems.splice(index, 1);
 
         this.setState({
@@ -27,8 +28,17 @@ export default class TodoFormComponent extends React.Component {
     }
 
     addTodo(todo) {
-        this.state.todoItems.push({id: '4', todo: todo});
+        this.state.todoItems.push({ todo: todo, isComplete: false });
 
+        this.setState({
+            todoItems: this.state.todoItems
+        });
+    }
+
+    updateTodo(todo) {
+        todo.isComplete ? todo.isComplete = false : todo.isComplete = true;
+
+        this.state.todoItems.filter(x => x.id === todo.id)[0] = todo;
         this.setState({
             todoItems: this.state.todoItems
         });
@@ -41,7 +51,10 @@ export default class TodoFormComponent extends React.Component {
                     <div className="well col-xs-6 col-xs-offset-3">
                         <h1>To do: </h1>
                         <div name="todo-items">
-                            <TodoItemsComponent items={this.state.todoItems} selectedTask={this.updateItem}/>
+                            <TodoItemsComponent
+                                items={this.state.todoItems}
+                                selectedTask={this.deleteTodo}
+                                updateStatus={this.updateTodo}/>
                         </div>
                         <div name="add-todo-item">
                             <AddTodoItemComponent addTodoTask={this.addTodo}/>

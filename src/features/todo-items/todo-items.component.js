@@ -11,10 +11,11 @@ render() {
                 {
                     this.props.items.map((item) => {
                         return (
-                            <li className={"list-group-item" + (item.isComplete ? ' list-group-item-success' : '')}>
+                            <li key={item.id} className={"list-group-item" + (item.isComplete ? ' list-group-item-success' : '')}>
                                 {item.todo}
                                 <div className="pull-right">
                                     <button
+                                        id={"btn-success" + (item.id)}
                                         type="button"
                                         className="btn btn-xs btn-success"
                                         onClick={() => { this.props.updateStatus(item)}}
